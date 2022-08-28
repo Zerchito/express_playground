@@ -8,7 +8,4 @@ function routerApi(app) {
   routerV1.use('/accounts', accountsRouter);
   routerV1.use('/users', userRouter);
 }
-
-
-
 module.exports = routerApi;
