@@ -5,7 +5,11 @@ const USER = encodeURIComponent(config.dbUser);
 const PWD = encodeURIComponent(config.dbPassword);
 const uri = `postgres://${USER}:${PWD}@${config.dbHost}:${config.dbPort}/${config.dbName}`;
 
-
+/**
+ * This is an example to use a connection with memory
+ * that means, if the connection was already created
+ * it returns that one else it creates a new connection.
+ */
 const pool  = new Pool({ connectionString: uri });
 
 module.exports = pool;
