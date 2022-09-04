@@ -8,3 +8,5 @@ const createAccountSchema = Joi.object({
   name: name.required(),
   totalAmount: amount
 })
+
+module.exports = { createAccountSchema }
